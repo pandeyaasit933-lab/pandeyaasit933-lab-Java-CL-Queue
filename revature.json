@@ -1,0 +1,46 @@
+{
+  "type": "java",
+  "testFiles": [
+    {
+      "path": "src/test/java/QueueExerciseTest.java",
+      "testCases": [
+        {
+          "methodName": "createQueueTest",
+          "label": "Verify a new queue is created successfully",
+          "description": "Checks that createQueue() returns a non-null Queue instance."
+        },
+        {
+          "methodName": "getSizeTest1",
+          "label": "Verify a new queue starts with size 0",
+          "description": "Checks that getSize() returns 0 when called on a newly created, empty queue."
+        },
+        {
+          "methodName": "addToQueueTest1",
+          "label": "Verify adding one item updates queue size to 1",
+          "description": "Adds a single element using addToEndOfQueue() and verifies getSize() returns 1."
+        },
+        {
+          "methodName": "addToQueueTest2",
+          "label": "Verify adding three items updates queue size to 3",
+          "description": "Adds three elements in order with addToEndOfQueue() and verifies getSize() returns 3."
+        },
+        {
+          "methodName": "removeFromStartOfQueueTest1",
+          "label": "Verify first-in item is removed and size is updated",
+          "description": "Adds three names, removes one with removeFromStartOfQueue(), checks the removed value is 'Jim' and that size is now 2."
+        },
+        {
+          "methodName": "removeFromStartOfQueueTest2",
+          "label": "Verify FIFO removal order and empty queue size",
+          "description": "Adds 'Jim', 'Sally', 'Kate', removes them with removeFromStartOfQueue() in sequence, verifies order and that final size is 0."
+        },
+        {
+          "methodName": "getStartOfQueueWithoutRemovingTest1",
+          "label": "Verify peek operation does not change queue size",
+          "description": "Adds three names, retrieves the first with getStartOfQueueWithoutRemoving(), verifies the value is 'Jim' and size remains 3."
+        }
+      ]
+    }
+  ]
+}
+
